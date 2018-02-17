@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, HashRouter, Link } from 'react-router-dom';
 import Header from './components/header.js';
 import Footer from './components/footer.js';
 import Bio from './components/bio.js';
@@ -12,7 +12,8 @@ class App extends Component {
       <div className="App">
         <Header />
         
-        <Bio />
+
+        <Route path="/" exact component={Bio} />
 
         <Footer />
       </div>

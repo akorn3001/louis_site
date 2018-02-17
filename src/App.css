@@ -65,10 +65,10 @@ footer {
 }
 
 .headshot {
+  
   max-width: 100%;
   height: auto;
-  margin-right: 40px;
-  margin-bottom: 30px;
+  margin: 0 40px 30px 40px;
 }
 
 .bio h3 {
@@ -78,6 +78,18 @@ footer {
 }
 
 .bio-text {
-  flex: 250px;
+  align-self: center;
+  flex: 200px;
 }
 
+.alex-link {
+  text-decoration: none;
+}
+
+.alex-link:visited {
+  color: black;
+}
+
+.alex-link:hover {
+  color: blue;
+}
