@@ -6,7 +6,7 @@ class Bio extends Component {
   render () {
     return (
       <div className="bio">
-        <img src={Headshot} className="headshot" />
+        <img src={Headshot} className="headshot" width="400px" height="533px"/>
         <div className="bio-text">
           <h3>BIO</h3>
           <p className>
@@ -37,7 +37,6 @@ class Bio extends Component {
             senectus et netus et.
           </p>
         </div>
-        
       </div>
     );
   }

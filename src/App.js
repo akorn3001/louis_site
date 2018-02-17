@@ -14,7 +14,7 @@ class App extends Component {
         
 
         <Route path="/" exact component={Bio} />
-
+        
         <Footer />
       </div>
     );
