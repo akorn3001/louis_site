@@ -20,12 +20,14 @@ class Header extends Component {
     
     
     return (
-      <header>
-        <span>
-          Louis Kornfeld
-        </span>
+      <div>
+        <header>
+          <span>
+            Louis Kornfeld
+          </span>
+        </header>
         {navigation}
-      </header>
+      </div>
     );
   }
 }
