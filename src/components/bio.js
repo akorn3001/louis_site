@@ -6,10 +6,10 @@ class Bio extends Component {
   render () {
     return (
       <div className="bio">
-        <img src={Headshot} className="bio-img" />
-        <div>
-          <span>BIO</span>
-          <p className="bio-text">
+        <img src={Headshot} className="headshot" />
+        <div className="bio-text">
+          <h3>BIO</h3>
+          <p className>
             Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua. Aliquam nulla facilisi cras 
