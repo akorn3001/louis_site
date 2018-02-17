@@ -26,3 +26,44 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 } */
+
+html, body {
+  background-color: #f9eee0;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  font-size: 35px;
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
+  height: 60px;
+  align-items: center;
+  font-weight: 300;
+  letter-spacing: 7px;
+
+}
+
+header span {
+  width: 100%;
+}
+
+footer {
+  background-color: #efefef;
+  text-align: center;
+}
+
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  flex-direction: horizontal;
+  justify-content: space-between;
+}
+
+.bio-text {
+  max-width: 90%;
+  
+}
