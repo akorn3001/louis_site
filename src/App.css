@@ -16,12 +16,14 @@ body {
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 50px;
+  margin-left: 0;
+  padding: 0 20px 0 20px;
 }
 
 .nav-link > * {
   color: black;
   font-family: "canada-type-gibson";
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-decoration: none;
 }
 
@@ -64,7 +66,6 @@ footer {
   width: 80%;
   margin: auto;
   align-items: center;
-  /* min-height: calc(88vh); */
 }
 
 .bio-text p {
@@ -81,10 +82,10 @@ footer {
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 5px;
+  margin-bottom: 10px;
 }
 
 .bio-text {
-  align-self: center;
   flex: 200px;
 }
 
