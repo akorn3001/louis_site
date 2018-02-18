@@ -1,22 +1,54 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  testFunction() {
+    return(event) => {
+      event.preventDefault();
+      alert(this.props.location.pathname);
+    };
+  }
+  
   render() {
     let navigation;
     
-    const bioLink = <Link to="/bio">Bio</Link>;
-    const videoLink = <Link to="/videos">Videos</Link>;
-    const galleryLink = <Link to="/gallery">Gallery</Link>;
-    const contactLink = <Link to="/contact">Contact</Link>;
+    const bioLink = 
+    <NavLink 
+      activeClassName="active-link" 
+      activeStyle={{ color:'white' }} to="/bio">Bio
+    </NavLink>;
+    
+    const videoLink = 
+    <NavLink 
+      activeClassName="active-link" 
+      activeStyle={{ color:'white' }} to="/videos">Videos
+    </NavLink>;
+    
+    const galleryLink = 
+    <NavLink 
+      activeClassName="active-link" 
+      activeStyle={{ color:'white' }} to="/gallery">Gallery
+    </NavLink>;
+    
+    const contactLink = 
+    <NavLink 
+      activeClassName="active-link" 
+      activeStyle={{ color:'white' }} to="/contact">Contact
+    </NavLink>;
   
     navigation = 
-    <ul className="nav-links">
-      <li className="nav-link">{bioLink}</li>
-      <li className="nav-link">{videoLink}</li>
-      <li className="nav-link">{galleryLink}</li>
-      <li className="nav-link">{contactLink}</li>
-    </ul>;
+    <nav>
+      <ul className="nav-links">
+        <li className="nav-link">{bioLink}</li>
+        <li className="nav-link">{videoLink}</li>
+        <li className="nav-link">{galleryLink}</li>
+        <li className="nav-link">{contactLink}</li>
+      </ul>
+    </nav>;
     
     
     return (

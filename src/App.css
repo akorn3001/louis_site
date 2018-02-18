@@ -1,12 +1,13 @@
 html {
   position: relative;
   min-height: 100%;
+  background-color: #fffcf2;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: #fffcf2;
+  
   margin: 0 0 18px;
 }
 
@@ -20,19 +21,18 @@ body {
   padding: 0 20px 0 20px;
 }
 
+.active-link {
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
 .nav-link > * {
   color: black;
   font-family: "canada-type-gibson";
   letter-spacing: 2px;
   text-decoration: none;
-}
-
-.nav-link > *:visited {
-  color: black;
-}
-
-.nav-link > *:hover {
-  color: blue;
 }
 
 header {
