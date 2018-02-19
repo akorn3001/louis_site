@@ -12,7 +12,7 @@ class Bio extends Component {
   
     return (
       <div className="bio">
-        <img src={Headshot} className="headshot" width="400px" height="533px"/>
+        <img src={Headshot} alt="headshot" className="headshot" width="400px" height="533px"/>
         <div className="bio-text">
           <h3>BIO</h3>
           <p>
