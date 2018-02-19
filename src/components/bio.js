@@ -3,22 +3,19 @@ import Headshot from '../louis.png';
 import { withRouter } from 'react-router-dom';
 
 class Bio extends Component {
-  constructor(props) {
-    super(props);
-  }
-  
+
   componentDidMount() {
     window.scrollTo(0, 0);
   }
   
   render () {
-    // const extension = this.props.history;
+  
     return (
       <div className="bio">
         <img src={Headshot} className="headshot" width="400px" height="533px"/>
         <div className="bio-text">
           <h3>BIO</h3>
-          <p className>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua. Aliquam nulla facilisi cras 

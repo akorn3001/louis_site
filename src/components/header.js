@@ -2,16 +2,6 @@ import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
-  
-  testFunction() {
-    return(event) => {
-      event.preventDefault();
-      alert(this.props.location.pathname);
-    };
-  }
   
   render() {
     let navigation;

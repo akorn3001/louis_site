@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
+import ResponsiveEmbed from 'react-responsive-embed';
 
 class Videos extends Component {
   render () {
     return (
-      <div>
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/tnCelSNGIRc" 
-          frameborder="0" 
-          allow="autoplay; encrypted-media" 
-          allowfullscreen>
-        </iframe>
+      <div className="video-container">
+        <ResponsiveEmbed src="https://www.youtube.com/embed/tnCelSNGIRc" />
+        <ResponsiveEmbed src="https://www.youtube.com/embed/4cpSj3MOUec" />
+        <ResponsiveEmbed src="https://www.youtube.com/embed/iphCXKz9fMA" />
       </div>
     );
   }
 }
 
 export default Videos;
+

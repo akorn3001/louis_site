@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 import Bio from './components/bio';
@@ -27,7 +27,3 @@ class App extends Component {
 
 
 export default App;
-
-
-
-
