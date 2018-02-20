@@ -24,9 +24,8 @@ body {
 
 .active-link {
   padding: 5px 10px 5px 10px;
-  background-color: black;
+  background-color: #dddddd;
   border-radius: 10px;
-  color: white;
 }
 
 .nav-link > * {
@@ -34,6 +33,17 @@ body {
   letter-spacing: 2px;
   text-decoration: none;
   font-family: "Questrial", sans-serif;
+}
+
+ul li {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+ul li:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 header {
@@ -83,8 +93,6 @@ footer {
   height: auto;
   margin: 0 40px 30px 40px;
 }
-
-
 
 h3 {
   font-weight: bold;

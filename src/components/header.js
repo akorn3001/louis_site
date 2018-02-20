@@ -9,25 +9,33 @@ class Header extends Component {
     const bioLink = 
     <NavLink 
       activeClassName="active-link" 
-      activeStyle={{ color:'white' }} to="/bio">Bio
+      activeStyle={{ color: "#444444" }} to="/bio">Bio
     </NavLink>;
     
     const videoLink = 
     <NavLink 
       activeClassName="active-link" 
-      activeStyle={{ color:'white' }} to="/videos">Videos
+      activeStyle={{ color: "#444444" }} to="/videos">Videos
     </NavLink>;
     
     const galleryLink = 
     <NavLink 
       activeClassName="active-link" 
-      activeStyle={{ color:'white' }} to="/gallery">Gallery
+      activeStyle={{ color: "#444444" }} to="/gallery">Gallery
     </NavLink>;
+    
+    const magnetPodcastLink = 
+    <a href="https://soundcloud.com/magnettheaterpodcast">Magnet Podcast
+    </a>;
+    
+    const truthLink = 
+    <a href="http://www.thetruthpodcast.com/">The Truth
+    </a>;
     
     const contactLink = 
     <NavLink 
       activeClassName="active-link" 
-      activeStyle={{ color:'white' }} to="/contact">Contact
+      activeStyle={{ color: "#444444" }} to="/contact">Contact
     </NavLink>;
   
     navigation = 
@@ -36,6 +44,8 @@ class Header extends Component {
         <li className="nav-link">{bioLink}</li>
         <li className="nav-link">{videoLink}</li>
         <li className="nav-link">{galleryLink}</li>
+        <li className="nav-link">{magnetPodcastLink}</li>
+        <li className="nav-link">{truthLink}</li>
         <li className="nav-link">{contactLink}</li>
       </ul>
     </nav>;

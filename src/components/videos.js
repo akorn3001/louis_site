@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ResponsiveEmbed from 'react-responsive-embed';
+import EmbeddedVideo from './EmbeddedVideo';
 
 // RESPONSIVE EMBED CODE
 class Videos extends Component {
@@ -7,9 +8,27 @@ class Videos extends Component {
     return (
       <div className="video-container">
         <h3>VIDEOS</h3>
-        <ResponsiveEmbed src="https://www.youtube.com/embed/tnCelSNGIRc" />
-        <ResponsiveEmbed src="https://www.youtube.com/embed/4cpSj3MOUec" />
-        <ResponsiveEmbed src="https://www.youtube.com/embed/iphCXKz9fMA" />
+        <ResponsiveEmbed src="https://www.youtube.com/embed/tnCelSNGIRc" 
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" 
+          msallowfullscreen="msallowfullscreen" 
+          oallowfullscreen="oallowfullscreen" 
+          webkitallowfullscreen="webkitallowfullscreen"
+        />
+        <ResponsiveEmbed src="https://www.youtube.com/embed/4cpSj3MOUec" 
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" 
+          msallowfullscreen="msallowfullscreen" 
+          oallowfullscreen="oallowfullscreen" 
+          webkitallowfullscreen="webkitallowfullscreen"
+        />
+        <ResponsiveEmbed src="https://www.youtube.com/embed/iphCXKz9fMA" 
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" 
+          msallowfullscreen="msallowfullscreen" 
+          oallowfullscreen="oallowfullscreen" 
+          webkitallowfullscreen="webkitallowfullscreen"
+        />
       </div>
     );
   }
