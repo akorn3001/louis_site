@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ResponsiveEmbed from 'react-responsive-embed';
-import EmbeddedVideo from './EmbeddedVideo';
+// import EmbeddedVideo from './EmbeddedVideo';
 
 // RESPONSIVE EMBED CODE
 class Videos extends Component {
