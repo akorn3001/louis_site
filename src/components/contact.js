@@ -10,7 +10,7 @@ class Contact extends Component {
           <img src={Airplane} alt="airplane"/>
         </div>
         <span>
-          Contact me at louiskornfeld@gmail.com!
+          Send me an email at louiskornfeld@gmail.com.
         </span>
       </div>
     );

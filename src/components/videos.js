@@ -8,22 +8,25 @@ class Videos extends Component {
     return (
       <div className="video-container">
         <h3>VIDEOS</h3>
-        <ResponsiveEmbed src="https://www.youtube.com/embed/tnCelSNGIRc" 
-          allowfullscreen="allowfullscreen"
+        <ResponsiveEmbed className="embedded-video" 
+          src="https://www.youtube.com/embed/tnCelSNGIRc" 
+          allowFullScreen="allowfullscreen"
           mozallowfullscreen="mozallowfullscreen" 
           msallowfullscreen="msallowfullscreen" 
           oallowfullscreen="oallowfullscreen" 
           webkitallowfullscreen="webkitallowfullscreen"
         />
-        <ResponsiveEmbed src="https://www.youtube.com/embed/4cpSj3MOUec" 
-          allowfullscreen="allowfullscreen"
+        <ResponsiveEmbed className="embedded-video"  
+          src="https://www.youtube.com/embed/4cpSj3MOUec" 
+          allowFullScreen="allowfullscreen"
           mozallowfullscreen="mozallowfullscreen" 
           msallowfullscreen="msallowfullscreen" 
           oallowfullscreen="oallowfullscreen" 
           webkitallowfullscreen="webkitallowfullscreen"
         />
-        <ResponsiveEmbed src="https://www.youtube.com/embed/iphCXKz9fMA" 
-          allowfullscreen="allowfullscreen"
+        <ResponsiveEmbed className="embedded-video"  
+          src="https://www.youtube.com/embed/iphCXKz9fMA" 
+          allowFullScreen="allowfullscreen"
           mozallowfullscreen="mozallowfullscreen" 
           msallowfullscreen="msallowfullscreen" 
           oallowfullscreen="oallowfullscreen" 

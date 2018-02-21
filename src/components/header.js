@@ -8,46 +8,52 @@ class Header extends Component {
     let navigation;
     
     const bioLink = 
-    <NavLink 
+    <NavLink className="menuitem"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/bio">Bio
     </NavLink>;
     
     const videoLink = 
-    <NavLink 
+    <NavLink className="menuitem"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/videos">Videos
     </NavLink>;
     
     const galleryLink = 
-    <NavLink 
+    <NavLink className="menuitem"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/gallery">Gallery
     </NavLink>;
     
     const magnetPodcastLink = 
-    <a href="https://soundcloud.com/magnettheaterpodcast">Magnet Podcast
+    <a className="menuitem" href="https://soundcloud.com/magnettheaterpodcast">Magnet Podcast
     </a>;
     
     const truthLink = 
-    <a href="http://www.thetruthpodcast.com/">The Truth
+    <a className="menuitem" href="http://www.thetruthpodcast.com/">The Truth
     </a>;
     
     const contactLink = 
-    <NavLink 
+    <NavLink className="menuitem"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/contact">Contact
     </NavLink>;
   
     navigation = 
-    <nav>
-      <ul className="nav-links">
-        <li className="nav-link">{bioLink}</li>
-        <li className="nav-link">{videoLink}</li>
-        <li className="nav-link">{galleryLink}</li>
-        <li className="nav-link">{magnetPodcastLink}</li>
-        <li className="nav-link">{truthLink}</li>
-        <li className="nav-link">{contactLink}</li>
+    <nav id="topNav" className="navigation">
+      <span id="closebtn" onClick="navToggle()">
+        <span className="line1"></span>
+        <span className="line2"></span>
+        <span className="line3"></span>
+      </span>
+    
+      <ul className="menulist">
+        <li>{bioLink}</li>
+        <li>{videoLink}</li>
+        <li>{galleryLink}</li>
+        <li>{magnetPodcastLink}</li>
+        <li>{truthLink}</li>
+        <li>{contactLink}</li>
       </ul>
     </nav>;
     

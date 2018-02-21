@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <main className="Site-content">
+        <main id="main">
         
           <Switch>
             <Redirect from="/" to="/bio" exact />
