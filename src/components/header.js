@@ -1,47 +1,44 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-// import { Navbar } from 'react-bootstrap';
 
 class Header extends Component {
-  
   render() {
-    let navigation;
     
     const bioLink = 
-    <NavLink className="menuitem"
+    <NavLink className="menuitems"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/bio">Bio
     </NavLink>;
     
     const videoLink = 
-    <NavLink className="menuitem"
+    <NavLink className="menuitems"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/videos">Videos
     </NavLink>;
     
     const galleryLink = 
-    <NavLink className="menuitem"
+    <NavLink className="menuitems"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/gallery">Gallery
     </NavLink>;
     
     const magnetPodcastLink = 
-    <a className="menuitem" href="https://soundcloud.com/magnettheaterpodcast">Magnet Podcast
+    <a className="menuitems" href="https://soundcloud.com/magnettheaterpodcast">Magnet Podcast
     </a>;
     
     const truthLink = 
-    <a className="menuitem" href="http://www.thetruthpodcast.com/">The Truth
+    <a className="menuitems" href="http://www.thetruthpodcast.com/">The Truth
     </a>;
     
     const contactLink = 
-    <NavLink className="menuitem"
+    <NavLink className="menuitems"
       activeClassName="active-link" 
       activeStyle={{ color: "#444444" }} to="/contact">Contact
     </NavLink>;
   
-    navigation = 
-    <nav id="topNav" className="navigation">
-      <span id="closebtn" onClick="navToggle()">
+    let navigation = 
+    <div id="topNav" className="navigation">
+      <span id="closebtn">
         <span className="line1"></span>
         <span className="line2"></span>
         <span className="line3"></span>
@@ -55,15 +52,13 @@ class Header extends Component {
         <li>{truthLink}</li>
         <li>{contactLink}</li>
       </ul>
-    </nav>;
+    </div>;
     
     
     return (
       <div>
         <header>
-          <span>
-            Louis Kornfeld
-          </span>
+          <span>Louis Kornfeld</span>
         </header>
         {navigation}
       </div>
