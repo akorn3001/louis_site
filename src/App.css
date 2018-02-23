@@ -71,6 +71,10 @@ h3 {
   flex: 200px;
 }
 
+.h3-container {
+  text-align: center;
+}
+
 .alex-link {
   text-decoration: none;
 }
