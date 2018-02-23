@@ -32,6 +32,21 @@
         navToggle();
       })
     </script>
+    
+    <script>
+      $(document).on("click", ".menuitems", function() {
+        let nav = document.getElementById("topNav");
+        let close = document.getElementById("closebtn");
+        
+        if (nav.style.height > "35px") {
+          let menuIcon = close.children;
+          for (let i = 0; i < menuIcon.length; i++) {
+            menuIcon[i].classList.toggle("active");
+          }
+          navToggle(); 
+        }
+      })
+    </script>
   </head>
   <body className="Site">
     <!-- <noscript>

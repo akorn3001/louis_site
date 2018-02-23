@@ -27,7 +27,7 @@
   	  // main.style.marginTop = "50px";
 
       for (let i = 0; i < menu.length; i++) {
-  	    menu[i].style.opacity="0.0";
+  	    // menu[i].style.opacity="0.0";
   	    // menu[i].style.marginTop="100px";
   	  }
   	} 
@@ -42,6 +42,5 @@
   	  }
   	}
   };
-  
   window.navToggle = navToggle;
 });
