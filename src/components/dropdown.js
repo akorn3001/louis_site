@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
+import NavButton from './NavButton';
 
 class Dropdown extends Component {
   constructor(props) {
@@ -8,12 +9,8 @@ class Dropdown extends Component {
     this.state = { show: false };
 
     this.navToggle = this.navToggle.bind(this);
-    this.buttonToggle = this.buttonToggle.bind(this);
   }
 
-  buttonToggle() {
-    alert(this.children);
-  }
 
   navToggle() {
 
@@ -55,11 +52,7 @@ class Dropdown extends Component {
 
     let navigation =
     <div id="topNav" className="navigation">
-      <span id="closebtn" onClick={this.buttonToggle}>
-        <span className="line1"></span>
-        <span className="line2"></span>
-        <span className="line3"></span>
-      </span>
+      <NavButton />
 
       <ul className="menulist">
         <li>{bioLink}</li>
