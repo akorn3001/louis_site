@@ -1,5 +1,4 @@
-  $(document).ready(function() {
-
+$(document).ready(function() {
   let nav = document.getElementById("topNav");
   let main = document.getElementById("main");
   let menu = document.getElementsByClassName("menuitems");

@@ -1,5 +1,5 @@
 @import url('Navbar.css');
-
+@import url('Videos.css');
 
 html {
   position: relative;
@@ -56,7 +56,7 @@ footer {
 .headshot {
   max-width: 100%;
   height: auto;
-  margin: 0 40px 30px 40px;
+  margin: auto 40px auto 40px;
 }
 
 h3 {
@@ -85,22 +85,6 @@ h3 {
 
 .alex-link:hover {
   color: blue;
-}
-
-.video-container {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: auto;
-  text-align: center;
-}
-
-.video-container > * {
-  margin-bottom: 30px;
-}
-
-.embedded-video {
-  background-color: darkgray;
 }
 
 .contact-container {
