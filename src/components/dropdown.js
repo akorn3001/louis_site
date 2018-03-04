@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 import NavButton from './navButton';
-import NavButtonLine from './navButtonLine';
+import cx from 'classnames';
 
 class Dropdown extends Component {
   constructor(props) {
     super(props);
 
     this.state = { isOpen: false };
-
     this.navToggle = this.navToggle.bind(this);
   }
 
+  componentDidMount() {
+    console.log('The page just loaded. Is the dropdown open? ', this.state.isOpen);
+  }
+  componentDidUpdate() {
+    console.log('You just clicked the NavButton. Is the dropdown open? ', this.state.isOpen);
+  }
 
   navToggle() {
-
+    this.setState({ isOpen: !this.state.isOpen });
+    console.log("Dropdown is Open: ", this.state.isOpen);
   }
 
   render() {
@@ -51,9 +57,13 @@ class Dropdown extends Component {
       activeStyle={{ color: "#444444" }} to="/contact">Contact
     </NavLink>;
 
+    const activeClass = cx({
+      active: this.state.isOpen
+    });
+
     let navigation =
-    <div id="topNav" className="navigation">
-      <NavButton />
+    <div height={ this.state.isOpen ? "370px" : "50px" } id="topNav" className={"navigation " + activeClass}>
+      <NavButton action={this.navToggle}/>
 
       <ul className="menulist">
         <li>{bioLink}</li>
@@ -69,4 +79,4 @@ class Dropdown extends Component {
   }
 }
 
-export default Dropdown;
+export default withRouter(Dropdown);

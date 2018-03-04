@@ -12,17 +12,16 @@ class NavButton extends Component {
 
   toggleButton() {
     this.setState({ isOpen: !this.state.isOpen });
+    console.log('NavButton is Open? ', this.state.isOpen );
   }
 
-
   render() {
-    // let children = this.props.children;
     const activeClass = cx({
       active: this.state.isOpen
     });
 
     return (
-      <span id="closebtn" onClick={this.toggleButton}>
+      <span id="closebtn" onClick={ () => { this.toggleButton(); this.props.action(); } }>
         <span className={"line1 " + activeClass}/>
         <span className={"line2 " + activeClass}/>
         <span className={"line3 " + activeClass}/>
