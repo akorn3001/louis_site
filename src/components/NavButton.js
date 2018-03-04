@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import cx from 'classnames';
 
 class NavButton extends Component {
   constructor(props) {
@@ -10,22 +11,21 @@ class NavButton extends Component {
   }
 
   toggleButton() {
-    let menuIcon = [this.refs.line.previousElementSibling, this.refs.line, this.refs.line.nextElementSibling];
-
-    menuIcon.forEach(el => {
-      el.classList.toggle("active");
-    });
-
     this.setState({ isOpen: !this.state.isOpen });
   }
 
+
   render() {
+    // let children = this.props.children;
+    const activeClass = cx({
+      active: this.state.isOpen
+    });
 
     return (
       <span id="closebtn" onClick={this.toggleButton}>
-        <span className="line1"></span>
-        <span className="line2" ref="line"></span>
-        <span className="line3"></span>
+        <span className={"line1 " + activeClass}/>
+        <span className={"line2 " + activeClass}/>
+        <span className={"line3 " + activeClass}/>
       </span>
     );
   }

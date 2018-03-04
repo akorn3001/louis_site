@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import NavButton from './NavButton';
+import NavButton from './navButton';
+import NavButtonLine from './navButtonLine';
 
 class Dropdown extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { show: false };
+    this.state = { isOpen: false };
 
     this.navToggle = this.navToggle.bind(this);
   }
