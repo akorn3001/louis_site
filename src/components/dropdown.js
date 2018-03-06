@@ -7,20 +7,32 @@ class Dropdown extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isOpen: false };
+    this.state = { isOpen: false, linkClicked: false };
     this.navToggle = this.navToggle.bind(this);
+    this.onRouteChanged = this.onRouteChanged.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {
-    console.log('The page just loaded. Is the dropdown open? ', this.state.isOpen);
-  }
-  componentDidUpdate() {
-    console.log('You just clicked the NavButton. Is the dropdown open? ', this.state.isOpen);
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      this.onRouteChanged();
+    }
   }
 
+  handleClick() {
+    if (this.state.isOpen) {
+      this.setState({ isOpen: false });
+    }
+  }
+
+  onRouteChanged() {
+    this.setState({ linkClicked: true });
+  }
+
+  // Function passed from Dropdown parent to NavButton child.
+  // 'this' refers to the Dropdown component
   navToggle() {
     this.setState({ isOpen: !this.state.isOpen });
-    console.log("Dropdown is Open: ", this.state.isOpen);
   }
 
   render() {
@@ -62,10 +74,10 @@ class Dropdown extends Component {
     });
 
     let navigation =
-    <div height={ this.state.isOpen ? "370px" : "50px" } id="topNav" className={"navigation " + activeClass}>
-      <NavButton action={this.navToggle}/>
+    <div id="topNav" className={"navigation " + activeClass}>
+      <NavButton action={this.navToggle}  />
 
-      <ul className="menulist">
+      <ul onClick={this.handleClick} className="menulist">
         <li>{bioLink}</li>
         <li>{videoLink}</li>
         <li>{galleryLink}</li>

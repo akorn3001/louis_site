@@ -9,21 +9,23 @@ import Contact from './components/contact';
 import './App.css';
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
         <Header />
         <main id="main">
-        
+
           <Switch>
             <Redirect from="/" to="/bio" exact />
             <Route path="/bio" exact component={Bio} />
           </Switch>
-          
+
           <Route path="/videos" exact component={Videos} />
           <Route path="/gallery" exact component={Gallery} />
           <Route path="/contact" exact component={Contact} />
-          
+
         </main>
         <Footer />
       </div>
