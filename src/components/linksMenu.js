@@ -2,52 +2,50 @@ import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
 
 class LinksMenu extends Component {
-  // constructor(props) {
-  // //   super(props);
-  // //
-  // //   this.state = { linkColor : "#444444" };
-  // //
-  // //   this.updateLinkColor = this.updateLinkColor.bind(this);
-  // // }
-  // //
-  // // componentWillMount() {
-  // //   this.updateLinkColor();
-  // // }
-  // //
-  // // componentDidMount() {
-  // //   window.addEventListener("resize", this.updateLinkColor);
-  // // }
-  // //
-  // // componendDidUnmount() {
-  // //   window.removeEventListener("resize", this.updateLinkColor);
-  // // }
-  // //
-  // // updateLinkColor() {
-  // //   this.setState({ linkColor: (window.innerWidth < 601 ? "yellow" : "#444444" )});
-  // // }
+  constructor(props) {
+    super(props);
+
+    this.state = { linkColor : "#444444" };
+
+    this.updateLinkColor = this.updateLinkColor.bind(this);
+  }
+
+  componentWillMount() {
+    this.updateLinkColor();
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateLinkColor);
+  }
+
+  componendDidUnmount() {
+    window.removeEventListener("resize", this.updateLinkColor);
+  }
+
+  updateLinkColor() {
+    this.setState({ linkColor: (window.innerWidth < 601 ? "white" : "#444444" )});
+  }
 
   render() {
-
-    // let linkColor = (window.innerWidth > 600 ? "#444444" : "yellow");
 
     const bioLink =
     <NavLink className="menuitems"
       activeClassName="active-link"
-      activeStyle={{ color: "#444444" }}
+      activeStyle={{ color: this.state.linkColor }}
       to="/bio">Bio
     </NavLink>;
 
     const videoLink =
     <NavLink className="menuitems"
       activeClassName="active-link"
-      activeStyle={{ color: "#444444" }}
+      activeStyle={{ color: this.state.linkColor }}
       to="/videos">Videos
     </NavLink>;
 
     const galleryLink =
     <NavLink className="menuitems"
       activeClassName="active-link"
-      activeStyle={{ color: "#444444" }}
+      activeStyle={{ color: this.state.linkColor }}
       to="/gallery">Gallery
     </NavLink>;
 
@@ -62,7 +60,7 @@ class LinksMenu extends Component {
     const contactLink =
     <NavLink className="menuitems"
       activeClassName="active-link"
-      activeStyle={{ color: "#444444" }}
+      activeStyle={{ color: this.state.linkColor }}
       to="/contact">Contact
     </NavLink>;
 

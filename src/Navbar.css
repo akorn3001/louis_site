@@ -69,8 +69,9 @@
   }
 
   .menulist {
+    /* padding: 30px 0 10px 0; */
     padding: 0;
-    width: 100%;
+    width: 80%;
   }
 
   .line1, .line2, .line3 {
@@ -103,10 +104,6 @@
     top: -7px;
   }
 
-  /* ul li:first-child {
-    margin-top: 20px;
-  } */
-
   .menuitems {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -114,7 +111,7 @@
     list-style: none;
     font-family: "Questrial", sans-serif;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-size: 24px;
     color: black;
     display: inline-block;
