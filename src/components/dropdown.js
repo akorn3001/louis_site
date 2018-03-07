@@ -7,7 +7,7 @@ class Dropdown extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isOpen: false, linkClicked: false };
+    this.state = { isOpen: false };
 
     this.navToggle = this.navToggle.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -26,13 +26,12 @@ class Dropdown extends Component {
   }
 
   render() {
-    let navButtonAttr = (this.state.isOpen ? true : false);
 
     const activeClass = cx({ active: this.state.isOpen });
 
     return (
       <div id="topNav" className={"navigation " + activeClass}>
-        <NavButton attr={navButtonAttr} buttonAction={this.navToggle} />
+        <NavButton attr={this.state.isOpen} buttonAction={this.navToggle} />
         <LinksMenu linksAction={this.handleClick} />
       </div>
     );

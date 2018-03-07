@@ -8,7 +8,6 @@ class NavButton extends Component {
     this.state = { isOpen: false };
 
     this.toggleButton = this.toggleButton.bind(this);
-    this.clickFunctions = this.clickFunctions.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -21,18 +20,13 @@ class NavButton extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   }
 
-  clickFunctions() {
-    this.toggleButton();
-    this.props.buttonAction();
-  }
-
   render() {
     const activeClass = cx({
       active: this.state.isOpen
     });
 
     return (
-      <span id="closebtn" onClick={this.clickFunctions}>
+      <span id="closebtn" onClick={this.props.buttonAction}>
         <span className={"line1 " + activeClass}/>
         <span className={"line2 " + activeClass}/>
         <span className={"line3 " + activeClass}/>
