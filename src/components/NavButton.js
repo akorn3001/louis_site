@@ -23,8 +23,7 @@ class NavButton extends Component {
   }
 
   closeButton() {
-    this.setState({ isOpen: false, routeChanged: false });
-    alert('poop');
+    this.setState({ isOpen: false });
   }
 
   clickFunctions() {
@@ -33,6 +32,7 @@ class NavButton extends Component {
   }
 
   render() {
+
     const activeClass = cx({
       active: this.state.isOpen
     });
