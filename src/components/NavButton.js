@@ -7,26 +7,24 @@ class NavButton extends Component {
 
     this.state = { isOpen: false };
 
-    this.toggleButton = this.toggleButton.bind(this);
+    this.buttonToggle = this.buttonToggle.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.attr !== nextProps.attr) {
-      this.toggleButton();
+      this.buttonToggle();
     }
   }
 
-  toggleButton() {
+  buttonToggle() {
     this.setState({ isOpen: !this.state.isOpen });
   }
 
   render() {
-    const activeClass = cx({
-      active: this.state.isOpen
-    });
+    const activeClass = cx({ active: this.state.isOpen });
 
     return (
-      <span id="closebtn" onClick={this.props.buttonAction}>
+      <span id="closebtn" onClick={this.props.navToggle}>
         <span className={["line1", activeClass].join(' ')}/>
         <span className={["line2", activeClass].join(' ')}/>
         <span className={["line3", activeClass].join(' ')}/>

@@ -10,10 +10,17 @@ class Dropdown extends Component {
     this.state = { isOpen: false };
 
     this.navToggle = this.navToggle.bind(this);
+    this.closeNav = this.closeNav.bind(this);
   }
 
   navToggle() {
     this.setState({ isOpen: !this.state.isOpen });
+  }
+
+  closeNav() {
+    if (this.state.isOpen) {
+      this.setState({ isOpen: false });
+    }
   }
 
   render() {
@@ -21,8 +28,8 @@ class Dropdown extends Component {
 
     return (
       <div id="topNav" className={["navigation", activeClass].join(' ')}>
-        <NavButton attr={this.state.isOpen} buttonAction={this.navToggle} />
-        <LinksMenu linksAction={this.navToggle} />
+        <NavButton attr={this.state.isOpen} navToggle={this.navToggle} />
+        <LinksMenu closeNav={this.closeNav} />
       </div>
     );
   }
