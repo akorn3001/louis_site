@@ -27,9 +27,9 @@ class NavButton extends Component {
 
     return (
       <span id="closebtn" onClick={this.props.buttonAction}>
-        <span className={"line1 " + activeClass}/>
-        <span className={"line2 " + activeClass}/>
-        <span className={"line3 " + activeClass}/>
+        <span className={["line1", activeClass].join(' ')}/>
+        <span className={["line2", activeClass].join(' ')}/>
+        <span className={["line3", activeClass].join(' ')}/>
       </span>
     );
   }
