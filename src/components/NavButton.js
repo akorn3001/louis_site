@@ -5,16 +5,15 @@ class NavButton extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isOpen: false, routeChanged: false };
+    this.state = { isOpen: false };
 
     this.toggleButton = this.toggleButton.bind(this);
-    this.closeButton = this.closeButton.bind(this);
     this.clickFunctions = this.clickFunctions.bind(this);
   }
 
-  componentDidUpdate() {
-    if (this.state.routeChanged) {
-      this.closeButton();
+  componentWillReceiveProps(nextProps) {
+    if (this.props.attr !== nextProps.attr) {
+      this.toggleButton();
     }
   }
 
@@ -22,17 +21,12 @@ class NavButton extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   }
 
-  closeButton() {
-    this.setState({ isOpen: false });
-  }
-
   clickFunctions() {
     this.toggleButton();
-    this.props.action();
+    this.props.buttonAction();
   }
 
   render() {
-
     const activeClass = cx({
       active: this.state.isOpen
     });

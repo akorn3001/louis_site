@@ -4,6 +4,7 @@ import { withRouter, NavLink } from 'react-router-dom';
 class LinksMenu extends Component {
 
   render() {
+    
     const bioLink =
     <NavLink className="menuitems"
       activeClassName="active-link"
@@ -37,7 +38,7 @@ class LinksMenu extends Component {
     </NavLink>;
 
     return (
-      <ul className="menulist">
+      <ul onClick={this.props.linksAction} className="menulist">
         <li>{bioLink}</li>
         <li>{videoLink}</li>
         <li>{galleryLink}</li>

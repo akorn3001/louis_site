@@ -10,24 +10,13 @@ class Dropdown extends Component {
     this.state = { isOpen: false, linkClicked: false };
 
     this.navToggle = this.navToggle.bind(this);
-    this.onRouteChanged = this.onRouteChanged.bind(this);
     this.handleClick = this.handleClick.bind(this);
-  }
-
-  componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      this.onRouteChanged();
-    }
   }
 
   handleClick() {
     if (this.state.isOpen) {
       this.setState({ isOpen: false });
     }
-  }
-
-  onRouteChanged() {
-    this.setState({ linkClicked: true });
   }
 
   // Function passed from Dropdown parent to NavButton child.
@@ -37,13 +26,14 @@ class Dropdown extends Component {
   }
 
   render() {
+    let navButtonAttr = (this.state.isOpen ? true : false);
 
     const activeClass = cx({ active: this.state.isOpen });
 
     return (
       <div id="topNav" className={"navigation " + activeClass}>
-        <NavButton action={this.navToggle}  />
-        <LinksMenu />
+        <NavButton attr={navButtonAttr} buttonAction={this.navToggle} />
+        <LinksMenu linksAction={this.handleClick} />
       </div>
     );
   }
