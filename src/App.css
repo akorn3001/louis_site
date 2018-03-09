@@ -1,5 +1,6 @@
 @import url('Navbar.css');
 @import url('Videos.css');
+@import url('Header.css');
 
 html {
   position: relative;
@@ -10,20 +11,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 0 18px;
-}
-
-header {
-  display: flex;
-  font-size: 35px;
-  background-color: black;
-  color: white;
-  padding: 7px;
-  height: 60px;
-  align-items: center;
-  font-weight: 300;
-  letter-spacing: 7px;
-  justify-content: center;
-  font-family: "Questrial", sans-serif;
 }
 
 footer {
