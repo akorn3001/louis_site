@@ -11,8 +11,6 @@ class Videos extends Component {
         <EmbeddedVideo embedCode="tnCelSNGIRc" />
         <EmbeddedVideo embedCode="4cpSj3MOUec" />
         <EmbeddedVideo embedCode="iphCXKz9fMA" />
-
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/p5qVxAoKwbE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     );
   }
