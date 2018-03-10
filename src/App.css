@@ -108,3 +108,8 @@ h3 {
   width: 80%;
   margin: auto;
 }
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+}
