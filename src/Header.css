@@ -6,7 +6,6 @@ header {
   height: 60px;
   align-items: center;
   font-weight: 300;
-  letter-spacing: 7px;
   justify-content: center;
   font-family: "Questrial", sans-serif;
 }
@@ -14,11 +13,13 @@ header {
 @media screen and (min-width: 601px) {
   header {
     font-size: 35px;
+    letter-spacing: 7px;
   }
 }
 
 @media screen and (max-width: 600px) {
   header {
-    font-size: 20px;
+    font-size: 23px;
+    letter-spacing: 3px;
   }
 }
