@@ -25,6 +25,7 @@
   ul li {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
+    -webkit-backface-visibility: hidden;
   }
 
   ul li:hover {

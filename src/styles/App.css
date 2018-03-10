@@ -13,6 +13,7 @@ body {
   margin: 0 0 18px;
 }
 
+/* FOOTER STYLES */
 footer {
   background-color: #efefef;
   text-align: center;
@@ -24,6 +25,19 @@ footer {
   overflow:hidden;
 }
 
+.alex-link {
+  text-decoration: none;
+}
+
+.alex-link:visited {
+  color: black;
+}
+
+.alex-link:hover {
+  color: blue;
+}
+
+/* BIO STYLES */
 .bio {
   display: flex;
   flex-wrap: wrap;
@@ -33,6 +47,10 @@ footer {
   margin: auto;
   margin-bottom: 30px;
   align-items: center;
+}
+
+.bio-text {
+  flex: 200px;
 }
 
 .bio-text p {
@@ -54,26 +72,11 @@ h3 {
   font-family: "Questrial", sans-serif;
 }
 
-.bio-text {
-  flex: 200px;
-}
-
 .h3-container {
   text-align: center;
 }
 
-.alex-link {
-  text-decoration: none;
-}
-
-.alex-link:visited {
-  color: black;
-}
-
-.alex-link:hover {
-  color: blue;
-}
-
+/* CONTACT STYLES */
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -101,15 +104,11 @@ h3 {
   height: 45%;
 }
 
+/* GALLERY STYLES */
 .gallery-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 80%;
   margin: auto;
-}
-
-.video-thumbnail {
-  width: 100%;
-  height: auto;
 }

@@ -6,7 +6,7 @@ import Bio from './components/bio';
 import Videos from './components/videos';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
-import './App.css';
+import './styles/App.css';
 
 class App extends Component {
 

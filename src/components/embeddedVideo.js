@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import ResponsiveEmbed from 'react-responsive-embed';
+import VideoThumbnail from './videoThumbnail';
 
 class EmbeddedVideo extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { clicked: false, embedCode: this.props.embedCode };
-    this.buttonClick = this.buttonClick.bind(this);
+    this.state = { clicked: false };
+    this.clickPlay = this.clickPlay.bind(this);
   }
 
-  buttonClick() {
+  clickPlay() {
     this.setState({ clicked: true });
   }
 
@@ -18,15 +19,12 @@ class EmbeddedVideo extends Component {
 
     if (!this.state.clicked) {
       element =
-      <img className="video-thumbnail"
-        alt="thumbnail"
-        src={"https://img.youtube.com/vi/" + this.state.embedCode + "/maxresdefault.jpg"}
-      />;
-    } 
+      <VideoThumbnail embedCode={this.props.embedCode} />;
+    }
     else {
       element =
       <ResponsiveEmbed className="embedded-video"
-        src={"https://www.youtube.com/embed/" + this.state.embedCode}
+        src={"https://www.youtube.com/embed/" + this.props.embedCode + "?autoplay=1"}
         allowFullScreen="allowfullscreen"
         mozallowfullscreen="mozallowfullscreen"
         msallowfullscreen="msallowfullscreen"
@@ -36,7 +34,7 @@ class EmbeddedVideo extends Component {
     }
 
     return(
-      <div onClick={this.buttonClick}>
+      <div className="video-wrapper" onClick={this.clickPlay}>
         {element}
       </div>
     );
