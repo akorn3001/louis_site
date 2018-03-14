@@ -112,3 +112,18 @@ h3 {
   width: 80%;
   margin: auto;
 }
+
+.img-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.gallery-pic {
+  max-width: 70%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}

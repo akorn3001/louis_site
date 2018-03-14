@@ -31,12 +31,13 @@
 
 .thumbnail-wrapper {
   position: relative;
+  /* background-color: black; */
 }
 
 .thumbnail-play {
   opacity: 0.8;
-  -webkit-transition: all 5s ease-out;
-  -moz-transition: all 5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
   -webkit-backface-visibility: hidden;
 }
 
