@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollLock from 'react-scrolllock';
 import cx from 'classnames';
 
 class ImageModal extends Component {
@@ -14,6 +15,7 @@ class ImageModal extends Component {
 
     return (
       <div className="modal">
+        <ScrollLock />
         <span onClick={this.props.closeModal} className="close-modal-button">×</span>
         <img src={this.props.imgSrc} />
       </div>

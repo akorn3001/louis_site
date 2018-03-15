@@ -63,7 +63,7 @@ h3 {
 
 .modal img {
   position: relative;
-  width: 90%;
+  width: 85%;
   height: auto;
 }
 
@@ -76,7 +76,7 @@ h3 {
 
 .close-modal-button {
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 30px;
   color: white;
   font-size: 50px;
