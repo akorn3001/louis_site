@@ -1,6 +1,10 @@
 @import url('Navbar.css');
 @import url('Videos.css');
 @import url('Header.css');
+@import url('Gallery.css');
+@import url('Bio.css');
+@import url('Contact.css');
+
 
 html {
   position: relative;
@@ -37,33 +41,6 @@ footer {
   color: blue;
 }
 
-/* BIO STYLES */
-.bio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 30px;
-  align-items: center;
-}
-
-.bio-text {
-  flex: 200px;
-}
-
-.bio-text p {
-  line-height: 25px;
-  font-family: "Nunito sans", sans-serif;
-}
-
-.headshot {
-  max-width: 100%;
-  height: auto;
-  margin: auto 40px auto 40px;
-}
-
 h3 {
   font-weight: bold;
   font-size: 30px;
@@ -72,58 +49,37 @@ h3 {
   font-family: "Questrial", sans-serif;
 }
 
-.h3-container {
-  text-align: center;
-}
-
-/* CONTACT STYLES */
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
-
-.contact-container img {
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   width: 100%;
+  height: 100%;
+  background-color: #111111;
+  border-radius: 6px;
+  opacity: 1.0;
+}
+
+.modal img {
+  position: relative;
+  width: 90%;
   height: auto;
-  margin-top: 30px;
 }
 
-.contact-container span {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-size: 25px;
-  font-family: "Nunito sans", sans-serif;
-}
-
-.contact-img-container {
-  width: 45%;
-  height: 45%;
-}
-
-/* GALLERY STYLES */
-.gallery-container {
+.modal {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
-
-.img-gallery {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  width: 80%;
-  margin: 20px auto;
+  justify-content: center;
+  position: fixed;
 }
 
-.gallery-pic {
-  max-width: 70%;
-  margin-bottom: 20px;
-  border-radius: 5px;
+.close-modal-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 50px;
+  z-index: 101;
+  cursor: pointer;
 }

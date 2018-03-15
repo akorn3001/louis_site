@@ -14,7 +14,7 @@ class Bio extends Component {
       <div className="bio">
         <img src={Headshot} alt="headshot" className="headshot" width="400px" height="533px"/>
         <div className="bio-text">
-          <div className="h3-container"><h3>BIO</h3></div>
+          <div className="bio-h3-container"><h3>BIO</h3></div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et

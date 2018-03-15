@@ -1,0 +1,29 @@
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.bio-text {
+  flex: 200px;
+}
+
+.bio-text p {
+  line-height: 25px;
+  font-family: "Nunito sans", sans-serif;
+}
+
+.bio-h3-container {
+  text-align: center;
+}
+
+.headshot {
+  max-width: 100%;
+  height: auto;
+  margin: auto 40px auto 40px;
+}

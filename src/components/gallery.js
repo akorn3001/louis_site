@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ImageModal from './imageModal';
 import Pic1 from '../gallery_pics/pic1.jpg';
 import Pic2 from '../gallery_pics/pic2.jpg';
 import Pic3 from '../gallery_pics/pic3.jpg';
@@ -13,14 +14,36 @@ import Pic11 from '../gallery_pics/pic11.jpg';
 import Pic12 from '../gallery_pics/pic12.jpg';
 
 class Gallery extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { show: false, imgSrc: null };
+
+    this.showModal = this.showModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  showModal(e) {
+    this.setState({
+      show: true,
+      imgSrc: e.target.src
+    });
+  }
+
+  closeModal() {
+    this.setState({
+      show: false,
+      imgSrc: null
+    });
+  }
 
   render () {
 
     return (
       <div className="gallery-container">
+        <ImageModal closeModal={this.closeModal} imgSrc={this.state.imgSrc} show={this.state.show} />
         <h3>GALLERY</h3>
-
-        <div className="img-gallery">
+        <div onClick={this.showModal} className="img-gallery">
           <img className="gallery-pic" src={Pic1} />
           <img className="gallery-pic"  src={Pic2} />
           <img className="gallery-pic"  src={Pic3} />
@@ -34,6 +57,7 @@ class Gallery extends Component {
           <img className="gallery-pic"  src={Pic11} />
           <img className="gallery-pic"  src={Pic12} />
         </div>
+
       </div>
     );
   }
