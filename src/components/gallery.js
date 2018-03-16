@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ImageModal from './imageModal';
 import ImageGallery from 'react-image-gallery';
 
 class Gallery extends Component {
@@ -30,6 +29,10 @@ class Gallery extends Component {
         thumbnail: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/thumb/Louis+%26+Joe+Bill_tn.jpg"
       },
       {
+        original: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/original/Louis+more.jpg",
+        thumbnail: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/thumb/Louis+more_tn.jpg"
+      },
+      {
         original: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/original/Louis+black+%26+white.jpg",
         thumbnail: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/thumb/Louis+black+%26+white_tn.jpg"
       },
@@ -44,17 +47,19 @@ class Gallery extends Component {
       {
         original: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/original/Louis+campfire+3.jpg",
         thumbnail: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/thumb/Louis+campfire+3_tn.jpg"
-      },
-      {
-        original: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/original/Louis+more.jpg",
-        thumbnail: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/thumb/Louis+more_tn.jpg"
-      },
+      }
     ];
 
     return (
       <div className="gallery-container">
         <h3>GALLERY</h3>
-        <ImageGallery className="img-gallery" showIndex={true} showPlayButton={false} items={images} />
+        <ImageGallery
+          className="img-gallery"
+          showBullets={true}
+          showIndex={true}
+          showPlayButton={false}
+          items={images}
+        />
       </div>
     );
   }

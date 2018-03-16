@@ -1,16 +1,18 @@
 .bio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-bottom: 30px;
-  align-items: center;
 }
 
 .bio-text {
   flex: 200px;
+  align-self: center;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .bio-text p {
@@ -23,7 +25,24 @@
 }
 
 .headshot {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin: auto 40px auto 40px;
+}
+
+@media screen and (max-width: 734px) {
+  .headshot-wrapper {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 735px) {
+  .bio-text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .headshot-wrapper {
+    max-width: 400px
+  }
 }
