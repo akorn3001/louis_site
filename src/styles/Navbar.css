@@ -43,9 +43,9 @@
     top: 74px;
     left: 0;
     background-color: darkgray;
-    box-shadow: 0 4px 4px -3px #232323;
+    /* box-shadow: 0 4px 4px -3px #232323;
     -moz-box-shadow: 0 4px 4px -3px #232323;
-    -webkit-box-shadow: 0 4px 4px -3px #232323;
+    -webkit-box-shadow: 0 4px 4px -3px #232323; */
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     padding-top: 0px;
