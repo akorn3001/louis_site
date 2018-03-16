@@ -1,15 +1,18 @@
-.gallery-container {
-  display: flex;
-  flex-direction: column;
+@import url("../../node_modules/react-image-gallery/styles/css/image-gallery.css");
+
+.gallery-container h3{
   text-align: center;
-  align-items: center;
-  width: 90%;
-  margin: 20px auto;
 }
 
+.image-gallery {
+  max-width: 80%;
+  margin: auto;
+}
+/*
 .gallery-container h3 {
   margin-bottom: 30px;
 }
+
 
 .img-gallery {
   display: flex;
@@ -38,4 +41,4 @@
   .gallery-pic {
     width: 100%;
   }
-}
+} */
