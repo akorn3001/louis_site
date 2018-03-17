@@ -50,8 +50,14 @@ class LinksMenu extends Component {
     </NavLink>;
 
     const magnetPodcastLink =
-    <a className="menuitems" href="https://soundcloud.com/magnettheaterpodcast">Magnet Podcast
-    </a>;
+    // <a className="menuitems" href="https://soundcloud.com/magnettheaterpodcast">Magnet Podcast
+    // </a>;
+    <NavLink className="menuitems"
+      activeClassName="active-link"
+      activeStyle={{ color: this.state.linkColor }}
+      to="/magnet-podcast">Magnet Podcast
+    </NavLink>;
+
 
     const truthLink =
     <a className="menuitems" href="http://www.thetruthpodcast.com/">The Truth

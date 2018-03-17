@@ -1,0 +1,17 @@
+.magnet-podcast {
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  .podcast-wrapper {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .podcast-wrapper {
+    max-width: 100%;
+    margin: auto;
+  }
+}
