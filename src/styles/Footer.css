@@ -1,5 +1,6 @@
 footer {
   background-color: #efefef;
+  color: black;
   text-align: center;
   position: absolute;
   left: 0;
@@ -7,10 +8,12 @@ footer {
   height: 18px;
   width: 100%;
   overflow:hidden;
+  margin-top: 30px;
 }
 
 .alex-link {
   text-decoration: none;
+  color: black;
 }
 
 .alex-link:visited {
