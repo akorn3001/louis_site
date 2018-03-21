@@ -24,3 +24,16 @@
   width: 45%;
   height: 45%;
 }
+
+@media screen and (max-width: 600px) {
+  .google-form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .google-form {
+    width: 80%
+  }
+}
