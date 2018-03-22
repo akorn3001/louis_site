@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
+import MDSpinner from 'react-md-spinner';
 
 class Gallery extends Component {
-  render() {
+
+  render () {
     const images = [
       {
         original: "https://s3.amazonaws.com/louiskornfeld-gallery-images/LK-gallery-images/original/K%26A+1.jpg",

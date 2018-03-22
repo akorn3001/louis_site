@@ -11,7 +11,7 @@
 .bio-text {
   flex: 250px;
   margin-bottom: 30px;
-  /* align-self: center; */
+  align-self: center;
 }
 
 .bio-text p {

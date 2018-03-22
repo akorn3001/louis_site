@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Airplane from '../airplane.png';
+// import Airplane from '../airplane.png';
+import MDSpinner from 'react-md-spinner';
 
 class Contact extends Component {
+
   render () {
     return (
-      <div className="contact-container">
-        <h3>CONTACT</h3>
+      <div className="contact-wrapper">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwhCqbDFgIZQvmPs0Q_7jQVubw-ko_d4-8XYK1ulGZClCJkA/viewform?embedded=true"
           className="google-form"
           title="contact-form"
-          width="760" height="1000" frameBorder="0"
+          width="100%" height="1000" frameBorder="0"
           marginHeight="0" marginWidth="0">Loading...
         </iframe>
       </div>

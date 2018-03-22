@@ -1,3 +1,4 @@
+@import url('Loading.css');
 @import url('Navbar.css');
 @import url('Videos.css');
 @import url('Header.css');
@@ -21,7 +22,8 @@ body {
 }
 
 #main {
-  background-color: white;
+  /* min-height: 100%; */
+  flex: 1 0 auto;
 }
 
 h3 {

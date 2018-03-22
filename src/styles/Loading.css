@@ -1,0 +1,6 @@
+.img-gallery,
+.podcast-wrapper,
+.video-wrapper,
+.contact-wrapper {
+  background:url(../loading.png) center center no-repeat;
+}

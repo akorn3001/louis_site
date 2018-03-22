@@ -8,7 +8,8 @@ footer {
   height: 18px;
   width: 100%;
   overflow:hidden;
-  margin-top: 30px;
+  margin-top: -18px;
+  flex-shrink: 0;
 }
 
 .alex-link {

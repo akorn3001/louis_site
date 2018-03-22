@@ -11,7 +11,6 @@ import './styles/App.css';
 
 class App extends Component {
 
-
   render() {
     return (
       <div className="App">
@@ -29,6 +28,7 @@ class App extends Component {
           <Route path="/contact" exact component={Contact} />
 
         </main>
+
         <Footer />
       </div>
     );

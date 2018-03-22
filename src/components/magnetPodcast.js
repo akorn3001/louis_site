@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import SCWidget from './scWidget';
+// import MDSpinner from 'react-md-spinner';
 
 class MagnetPodcast extends Component {
 
-  render() {
+  render () {
     return (
       <div className="magnet-podcast">
         <h3>MAGNET THEATER PODCAST</h3>
-          <div className="podcast-wrapper">
-            <SCWidget />
-          </div>
+        <SCWidget />
       </div>
     );
   }
