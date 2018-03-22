@@ -55,13 +55,15 @@ class Gallery extends Component {
     return (
       <div className="gallery-container">
         <h3>GALLERY</h3>
-        <ImageGallery
-          className="img-gallery"
-          showBullets={true}
-          showIndex={true}
-          showPlayButton={false}
-          items={images}
-        />
+        <div className="gallery-wrapper">
+          <ImageGallery
+            className="image-gallery"
+            showBullets={true}
+            showIndex={true}
+            showPlayButton={false}
+            items={images}
+          />
+        </div>
       </div>
     );
   }

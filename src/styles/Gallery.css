@@ -12,16 +12,21 @@
   text-align: center;
 }
 
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
 
 @media screen and (min-width: 601px) {
-  .image-gallery {
+  .gallery-wrapper {
     max-width: 70%;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .image-gallery {
+  .gallery-wrapper {
     max-width: 100%;
     margin: auto;
   }
