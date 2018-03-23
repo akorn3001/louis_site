@@ -1,6 +1,11 @@
-.gallery-wrapper,
-.podcast-wrapper,
-.videos-container,
+.podcast-wrapper {
+  background: url(../spinner.svg) center center no-repeat;
+}
+
+.thumbnail-wrapper {
+  background: url(../spinner.svg) center center no-repeat;
+}
+
 .contact-wrapper {
-  background: url(../spinner.svg) center 20vh no-repeat;
+  background: url(../spinner.svg) center 30px no-repeat;
 }

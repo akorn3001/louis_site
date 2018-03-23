@@ -13,9 +13,9 @@
   margin-bottom: 50px;
 }
 
-.embedded-video {
+/* .embedded-video {
   background-color: black;
-}
+} */
 
 .video-thumbnail {
   width: 100%;
@@ -31,7 +31,6 @@
 
 .thumbnail-wrapper {
   position: relative;
-  /* background-color: black; */
 }
 
 .thumbnail-play {
