@@ -9,21 +9,8 @@
 @import url('MagnetPodcast.css');
 
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 18px;
-}
-
-#main {
-  /* min-height: 100%; */
-  flex: 1 0 auto;
+html, body {
+  height: 100%;
 }
 
 h3 {
@@ -33,3 +20,19 @@ h3 {
   margin-bottom: 30px;
   font-family: "Questrial", sans-serif;
 }
+
+/* .Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Site-content {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.Site-content {
+  display: block;
+  height: 0;
+} */

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MDSpinner from 'react-md-spinner';
 
 class SCWidget extends Component {
 

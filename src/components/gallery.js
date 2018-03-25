@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
-import MDSpinner from 'react-md-spinner';
 
 class Gallery extends Component {
 

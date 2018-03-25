@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import Airplane from '../airplane.png';
-import MDSpinner from 'react-md-spinner';
 
 class Contact extends Component {
 
