@@ -12,5 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Root />, root);
   registerServiceWorker();
-
 });
