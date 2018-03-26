@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 class Footer extends Component {
+
   render () {
     return (
-      <footer style={{display: this.props.display}}>
+      <footer>
         <span>
           © Louis Kornfeld 2018 | Site by
           <a className="alex-link"
