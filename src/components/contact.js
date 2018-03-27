@@ -17,11 +17,3 @@ class Contact extends Component {
 }
 
 export default Contact;
-
-
-// <div className="contact-img-container">
-//   <img src={Airplane} alt="airplane"/>
-// </div>
-// <span>
-//   Send me an email at louiskornfeld@gmail.com.
-// </span>
