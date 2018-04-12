@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 30px;
-  width: 80%;
   margin: auto;
   padding: 68px, 34px;
+  width: 80%;
 }
 
 .bio-text {
@@ -15,6 +15,7 @@
 }
 
 .bio-text p {
+  font-size: 18px;
   line-height: 25px;
   font-family: "Nunito sans", sans-serif;
 }
@@ -36,6 +37,12 @@
   .headshot-wrapper {
     max-width: 100%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bio {
+    width: 95%;
   }
 }
 

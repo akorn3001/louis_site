@@ -8,7 +8,7 @@ class Footer extends Component {
         <span>
           © Louis Kornfeld 2018 | Site by
           <a className="alex-link"
-          href="https://www.alex-kornfeld.com"> Alex Kornfeld</a>
+          href="http://www.alex-kornfeld.com"> Alex Kornfeld</a>
         </span>
       </footer>
     );

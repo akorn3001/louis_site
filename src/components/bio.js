@@ -19,32 +19,29 @@ class Bio extends Component {
         <div className="bio-text">
           <div className="bio-h3-container"><h3>BIO</h3></div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Aliquam nulla facilisi cras
-            fermentum odio. Sodales ut etiam sit amet nisl purus
-            in. Aliquam sem fringilla ut morbi tincidunt. Mauris
-            in aliquam sem fringilla ut morbi tincidunt augue.
-            Convallis convallis tellus id interdum velit. Nam
-            aliquam sem et tortor consequat. Pharetra massa massa
-            ultricies mi quis hendrerit. Vitae semper quis lectus
-            nulla at volutpat diam. Sed risus ultricies tristique
-            nulla aliquet enim. Porttitor leo a diam sollicitudin
-            tempor id eu nisl nunc. Ac feugiat sed lectus vestibulum
-            mattis ullamcorper velit sed.
+            Louis Kornfeld is a writer / actor / director and veteran ensemble member
+            at the Magnet Theater in New York City, where he can be seen performing
+            his weekly duo show "Kornfeld & Andrews."
             <br/>
             <br/>
-            Proin nibh nisl condimentum id venenatis a condimentum
-            vitae. Proin libero nunc consequat interdum. Augue neque
-            gravida in fermentum et. Enim facilisis gravida neque
-            convallis a cras. Mattis nunc sed blandit libero volutpat
-            sed cras ornare. Pellentesque nec nam aliquam sem et tortor
-            consequat id. Facilisi etiam dignissim diam quis enim lobortis
-            scelerisque fermentum dui. Id porta nibh venenatis cras sed.
-            Cras tincidunt lobortis feugiat vivamus at augue eget arcu
-            dictum. Velit egestas dui id ornare arcu odio ut sem. Tristique
-            senectus et netus et.
+            Louis has created and developed numerous improvisational formats including
+            The Blackout, Story Story, and The Acid Trip. He has directed musicals and
+            plays such as 'Pope: The Musical,' 'Space Twin' and 'Ugh: A Christmas Show.'
+            He also spent three years as Managing Director of Megawatt at the Magnet Theater,
+            where he oversaw the casting and direction of a multitude of house teams.
+            <br/>
+            <br/>
+            Louis is a seasoned improviser and has traveled all around North America
+            performing and teaching, playing in Austin, Vancouver, Detroit and
+            Honolulu, to name just a few places. He has also appeared as a cast
+            member with the Second City as part of their partnership with Norwegian
+            Cruise Line.
+            <br/>
+            <br/>
+            He holds a BFA in film production from SUNY Purchase.
           </p>
+
+
         </div>
       </div>
     );

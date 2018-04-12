@@ -23,10 +23,6 @@ body {
   height: 100%;
 }
 
-.content {
-  margin-top: 40px;
-}
-
 .all-but-footer {
   flex: 1 0 auto;
 }
@@ -55,4 +51,16 @@ h3 {
   font-size: 30px;
   letter-spacing: 5px;
   font-family: "Questrial", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 888px) {
+  .content {
+    margin-top: 40px;
+  }
 }
